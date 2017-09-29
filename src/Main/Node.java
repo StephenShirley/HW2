@@ -1,7 +1,8 @@
 package Main;
 
-/**
- * Created by Kingpin on 9/27/2017.
+/*
+ Represents a node on a huffman tree.
+ Can hold an actual character value or be a blank node with just frequency.
  */
 public class Node {
     public int frequency;
@@ -13,6 +14,7 @@ public class Node {
         this.frequency = frequency;
         this.huffChar = huffChar;
     }
+    
     public Node(int frequency, char huffChar, Node leftChild, Node rightChild) {
         this.frequency = frequency;
         this.huffChar = huffChar;
